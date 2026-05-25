@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0E4B7A;
+  --color-secondary: #1E7BC8;
+  --color-accent: #F47B20;
+  --color-light-accent: #EAF5FD;
+  --color-bg-base: #F8FBFD;
+  --color-card-surface: #FFFFFF;
+  --color-text-dark: #182430;
+  --color-text-muted: #697887;
+  --color-success: #25B36A;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", sans-serif;
+}
+
+/* Custom global luxury adjustments */
+html {
+  font-family: var(--font-sans);
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-base);
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.7;
+  overflow-x: hidden;
+  background-color: #F8FBFD;
+}
+
+/* Custom high-end visual utility styles */
+.luxury-glass {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.luxury-glass-dark {
+  background: rgba(14, 75, 122, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.luxury-text-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-shadow {
+  box-shadow: 0 10px 40px -10px rgba(14, 75, 122, 0.08), 0 1px 3px rgba(14, 75, 122, 0.02);
+}
+
+.luxury-shadow-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px -12px rgba(14, 75, 122, 0.15), 0 0 1px rgba(30, 123, 200, 0.1);
+}
+
+.glow-orange-btn {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-orange-btn:hover {
+  box-shadow: 0 8px 30px rgba(244, 123, 32, 0.35);
+  transform: translateY(-2px);
+}
+
+.glow-blue-btn {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-blue-btn:hover {
+  box-shadow: 0 8px 30px rgba(14, 75, 122, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar for premium aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FBFD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBDCEB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9BB8D3;
+}
